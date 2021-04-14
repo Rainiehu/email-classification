@@ -1,0 +1,18 @@
+@import "./styles/Blank.css";
+@import "./styles/Footer.css";
+@import "./styles/Login.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~antd/dist/antd.css';
+@import './styles/Registration.css';
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
