@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.email.dao.UserDao">
+    <select id="login" resultType="com.example.email.model.User">
+        SELECT *
+        FROM user
+        WHERE email = #{email}
+          and password = #{password}
+    </select>
+    <insert id="register" useGeneratedKeys="true" keyProperty="id">
+        insert into user
+        (phone_number, email, first_name, middle_name, last_name, mail_address, occupation, user_name, password)
+        VALUES (#{phoneNumber}, #{email}, #{firstName}, #{middleName}, #{lastName}, #{mailAddress}, #{occupation},
+                #{userName}, #{password})
+    </insert>
+
+</mapper>
